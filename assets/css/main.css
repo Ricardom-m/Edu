@@ -195,6 +195,19 @@ nav {
 .btn-section .btn-play span {
   margin-right: 18px;
 }
+.btn-section .btn-nota {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-left: 20px;
+  color: #222;
+  font-size: 10px;
+  line-height: normal;
+  text-transform: capitalize;
+}
+.btn-section .btn-play span {
+  margin-right: 10px;
+}
 .curve-image {
   position: absolute;
   top: auto;
