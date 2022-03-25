@@ -55,19 +55,19 @@ nav {
   transition: all 0.3s ease-in-out;
 }
 .navigation-bar ul li a:hover {
-  color: #00c894;
+  color: #006ec8;
 }
 .navigation-bar ul li a.btn {
   display: inline-block;
   padding: 10px 28px;
   border-radius: 5px;
-  background-color: #d9fce7;
+  background-color: #d9ebfc;
   font-weight: normal;
   font-weight: 600;
-  color: #00c894;
+  color: #006ec8;
 }
 .navigation-bar ul li a.btn:hover {
-  background-color: #00c894;
+  background-color: #005dc8;
   color: #fff;
 }
 
@@ -177,7 +177,7 @@ nav {
   font-size: 16px;
   line-height: normal;
   color: #fff;
-  background-color: #50CA63;
+  background-color: #1c7ba0;
   text-transform: capitalize;
   box-shadow: 0px 4px 15px rgba(0, 200, 148, 0.15);
   border-radius: 3px;
@@ -195,11 +195,68 @@ nav {
 .btn-section .btn-play span {
   margin-right: 18px;
 }
+.btn-section .btn-nota {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-left: 20px;
+  color: #222;
+  font-size: 10px;
+  line-height: normal;
+  text-transform: capitalize;
+}
+.btn-section .btn-play span {
+  margin-right: 10px;
+}
 .curve-image {
   position: absolute;
   top: auto;
   bottom: -18px;
+  right: -10px;
+  transform: rotate(270deg);
+}
+
+.curve-image-i {
+  position: absolute;
+  top: -10px;
+  bottom: -18px;
+  left: -10px;
+  transform: rotate(90deg);
+}
+*, ::before, ::after {
+  box-sizing: border-box;
+}
+
+.nav__link {
+  color: var(--second-color);
+}
+
+.nav__link {
+  position: relative;
+  color: #fff;
+}
+
+.nav__link:hover {
+  position: relative;
+}
+
+.nav__link:hover::after {
+  position: absolute;
+  content: '';
+  width: 100%;
+  height: 0.18rem;
   left: 0;
+  top: 2rem;
+  background-color: var(--first-color);
+}
+.active::after {
+  position: absolute;
+  content: '';
+  width: 100%;
+  height: 0.18rem;
+  left: 0;
+  top: 2rem;
+  background-color: var(--first-color);
 }
 
 .shape {
