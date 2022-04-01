@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FERMS</title>
+    <!-- stylesheet -->
+    <link rel="stylesheet" href="assets/css/main.css">
+    <link rel="stylesheet" type="text/css" href="//fonts.googleapis.com/css?family=Montserrat:300,400,700%7CPoppins:300,400,500,700,900">
+    <link rel="stylesheet" href="assets/css/bootstrap.css">
+    <link rel="stylesheet" href="assets/css/fonts.css">
+    <link rel="stylesheet" href="assets/css/style.css">
+</head>
+
+<script language=javascript>
+    valor1=0;valor2=0;valor3=0;
+    function verpreguntas(){
+
+    aleatorio=parseInt(Math.random()*3)
+    if((valor1==2)&&(valor2==2)&&(valor3==2)){alert('Obtuviste  '+resultado.innerHTML+' puntos');return}
+    if((aleatorio==0)&&(valor1==2)){verpreguntas();return}
+    if((aleatorio==1)&&(valor2==2)){verpreguntas();return}
+    if((aleatorio==2)&&(valor3==2)){verpreguntas();return}
+
+    if(aleatorio==0){titulo1.style.display='';valor1=1;}
+    if(aleatorio==1){titulo2.style.display='';valor2=1;}
+    if(aleatorio==2){titulo3.style.display='';valor3=1;}
+
+    }
+
+
+    function respuestacorrecta(){
+    if(valor1==1){
+    if(f1.pregunta1[0].checked==true){resultado.innerHTML++}
+    else{alert('Respuesta incorrecta')}
+    titulo1.style.display='none';valor1=2
+    }
+
+    if(valor2==1){
+    if(f1.pregunta2[0].checked==true){resultado.innerHTML++}
+    else{alert('Respuesta incorrecta')}
+    titulo2.style.display='none';valor2=2
+
+    }
+
+    if(valor3==1){
+    if(f1.pregunta3[0].checked==true){resultado.innerHTML++}
+    else{alert('Respuesta incorrecta')}
+    titulo3.style.display='none';valor3=2
+
+    }
+
+    }
+
+
+    </script>
+
+<body onload="verpreguntas()"><form name=f1>
+    <!-- header -->
+    <header>
+        <div class="container">
+            <nav class="nav d-flex">
+                <a href="#" class="logo">
+                    <img src="assets/images/log.png" alt="logo" width="60" height="60">
+                </a>
+                <!-- toggle bar -->
+                <div class="burger">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+                <div class="navigation-bar">
+                    <ul>
+                        <li><a href="index.html">INICIO </a></li>
+                        <li><a href="QuintoST.html">QUINTO SEMESTRE</a></li>
+                        <li><a href="SextoST.html">SEXTO SEMESTRE</a></li>
+                        <li><a href="Contacto.html">CONTACTANOS</a></li>
+                    </ul>
+                </div>
+            </nav>
+        </div>
+    </header>
+    <section class="section section-md bg-gray-lighten">
+      <div class="container">
+          <div class="row justify-content-center">
+            <div class="col-md col-12 text-center">
+              <div class="section-name wow fadeInRight text-center" data-wow-delay=".2s">Unidad 1. Introduccion a Limites de funciones</div>
+              <h3 class="wow fadeInLeft text-capitalize text-center" data-wow-delay=".3s"><span class="text-primary">La integral indefinida</span></h3>
+              <tr>
+                <td height="31"><div align="justify">
+                  <table border="1" width="100%" id=titulo1 style="display:none" >
+
+                    <tr>
+                        <td><font face="Arial"> <strong>La antiderivada de una función, se le conoce con el nombre de:</strong></font></td>
+                    </tr>
+                    <tr>
+                        <td><font face="Arial">
+                    <input type="radio" name="pregunta1"  value="V1">
+                    Primitiva</font></td>
+                    </tr>
+                    <tr>
+                        <td><font face="Arial">
+                    <input type="radio" name="pregunta1"  value="V1">
+                    Derivada</font></td>
+                    </tr>
+                    <tr>
+                        <td><font face="Arial">
+                    <input type="radio" name="pregunta1"  value="V1">
+                    Integral</font></td>
+                    </tr>
+                    <tr>
+                        <td><font face="Arial">
+                    <input type="radio" name="pregunta1"  value="V1">
+                    Limite</font></td>
+                    </tr>
+                    <tr>
+                        <td>
+                  <p align="justify"> <font face="Arial">
+                    <input type="radio" name="pregunta"  value="V1">
+                    Indefinida</font></p>
+                          </td>
+                    </tr>
+                    </table>
+                  <br>
+                  <table border="1" width="100%" id=titulo2 style="display:none">
+
+                    <tr>
+                        <td><font face="Arial"><strong>Dada una función F(x), cuántas antiderivadas podemos hallarle?</strong>
+                        </font></td>
+                    </tr>
+                    <tr>
+                        <td><font face="Arial">
+                    <input type="radio" name="pregunta2" value="V1">
+                    Mas de cinco
+                        </font></td>
+                    </tr>
+                    <tr>
+                        <td><font face="Arial">
+                    <input type="radio" name="pregunta2"  value="V1">
+                    Infinitas</font></td>
+                    </tr>
+                    <tr>
+                        <td><font face="Arial">
+                    <input type="radio" name="pregunta2"  value="V1">
+                    Solo una</font></td>
+                    </tr>
+                    <tr>
+                        <td><font face="Arial">
+                    <input type="radio" name="pregunta2"  value="V1">
+                    Solo dos</font></td>
+                    </tr>
+                    <tr>
+                        <td><font face="Arial">
+                    <input type="radio" name="pregunta2"  value="V1">
+                    Ninguna</font></td>
+                    </tr>
+                    </table>
+                    <p>
+                    <table border=".1" width="100%" id=titulo3 style="display:none">
+
+                        <tr>
+                            <td>
+                  <p align="justify"><font face="Arial"><strong>La antiderivada de la función F(x) = 1 es la función:</strong>.</font></p>
+                              </td>
+                        </tr>
+                        <tr>
+                            <td><font face="Arial">
+                    <input type="radio" name="pregunta3"  value="V1">
+                    f(x) = x + c</font></td>
+                        </tr>
+                        <tr>
+                            <td><font face="Arial">
+                    <input type="radio" name="pregunta3" value="V1">
+                    f(x) = 1 + c</font></td>
+                        </tr>
+                        <tr>
+                            <td><font face="Arial">
+                    <input type="radio" name="pregunta3"  value="V1">
+                    f(x) = 1</font></td>
+                        </tr>
+                        <tr>
+                            <td><font face="Arial">
+                    <input type="radio" name="pregunta3" value="V1">
+                    f(x) = x</font></td>
+                        </tr>
+                        <tr>
+                            <td><font face="Arial">
+                    <input type="radio" name="pregunta3" value="V1">
+                    f(x) = c</font></td>
+                        </tr>
+                        </table>
+                </div>
+            <br>
+            <h2 align="center" >Aciertos: <span id="resultado">0</span></h2>
+            <p align="center"><input type="button" value=" R E S U L T A D O " onClick="respuestacorrecta();verpreguntas()"/></p>
+            </form>
+              <br></br>
+
+        </div>
+
+        <div class="row justify-content-center">
+        <div class="col-md-10 col-12 text-center"><span class="text-white d-block cta-big-text font-weight-medium"></span>
+            <p class="text-blue"></p><a class="button-width-190 button-primary button-circle button-lg button offset-top-30" href="QuintoU2.html">Finalizar</a>
+        </div>
+      </div>
+
+    </section>
+
+
+</body>
+<script src="assets/js/jquery.min.js"></script>
+<script src="assets/js/main.js"></script>
+<script src="assets/js/core.min.js"></script>
+<script src="assets/js/script.js"></script>
+
+</html>
